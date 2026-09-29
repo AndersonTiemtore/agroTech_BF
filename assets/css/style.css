@@ -508,12 +508,15 @@ ul{list-style:none}
   .nav-menu.open{display:flex}
   .btn-nav{display:none}
   .hamburger{display:flex}
-  .hero-content{padding-left:24px;padding-right:24px}
+  .container{padding:0 20px}
+  .hero-content{padding-left:20px;padding-right:20px}
   .stats-row{flex-direction:column;gap:12px}
   .stat-sep{width:50px;height:1px}
-  .solution-cards{grid-template-columns:1fr}
+  .solution-cards{grid-template-columns:1fr 1fr;gap:12px}
+  .sol-card{padding:16px 14px}
   .how-steps-row{grid-template-columns:1fr 1fr;gap:24px}
   .cultures-grid{grid-template-columns:repeat(2,1fr)}
+  .culture-card{height:100px}
   .why-grid{grid-template-columns:1fr 1fr}
   .footer-grid{grid-template-columns:1fr;gap:24px}
   .dash-cards-row{grid-template-columns:1fr}
@@ -521,7 +524,13 @@ ul{list-style:none}
 }
 @media(max-width:480px){
   .hero-btns{flex-direction:column;align-items:flex-start}
+  .solution-cards{grid-template-columns:1fr}
   .why-grid{grid-template-columns:1fr}
   .cultures-grid{grid-template-columns:1fr 1fr}
+  .culture-card{height:85px}
   .benefits-row{flex-direction:column;gap:10px}
+  .how-steps-row{grid-template-columns:1fr 1fr;gap:16px}
+  .how-step-circle{width:52px;height:52px;font-size:1.1rem}
+  .fc-layout{gap:28px}
+  .farmer-img{min-height:220px}
 }
